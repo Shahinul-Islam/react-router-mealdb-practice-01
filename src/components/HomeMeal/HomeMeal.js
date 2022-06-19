@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const HomeMeal = ({ meal }) => {
-  const { strMeal, strCategory, strMealThumb, strArea, strInstructions, idMeal } = meal;
+  const { strMeal, strMealThumb, idMeal } = meal;
   const navigate = useNavigate();
   const showMealDetails = () => {
     navigate("/food/" + idMeal);

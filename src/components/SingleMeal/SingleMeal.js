@@ -6,12 +6,12 @@ const SingleMeal = () => {
   const [meals, setMeals] = useState([]);
   useEffect(() => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
-    console.log(url);
+    // console.log(url);
     fetch(url)
       .then((res) => res.json())
       .then((data) => setMeals(data.meals[0]));
   }, [meals]);
-  console.log(meals);
+  // console.log(meals);
 
   return (
     <div className="max-w-fit bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto mt-4">

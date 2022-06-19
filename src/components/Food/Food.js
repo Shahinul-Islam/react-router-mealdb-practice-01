@@ -1,9 +1,10 @@
 import React from "react";
+import SearchBar from "../SearchBar/SearchBar";
 
 const Food = () => {
   return (
     <div>
-      <h2>This is food section</h2>
+      <SearchBar></SearchBar>
     </div>
   );
 };
